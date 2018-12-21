@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ["cypress"],
+    plugins: [ "cypress" ],
     env: {
         mocha: true,
         "cypress/globals": true

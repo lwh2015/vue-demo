@@ -93,6 +93,9 @@
 				target='_blank'
 				rel='noopener'
 			>awesome-vue</a></li>
+			<li><a
+				href='https://123'
+			>awesome-vue</a></li>
 		</ul>
 	</div>
 </template>
