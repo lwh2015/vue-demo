@@ -470,7 +470,7 @@ module.exports = {
             }
         ],
         "array-bracket-spacing": [
-            "warn",
+            "error",
             "always",
             {
                 //强制在括号内使用空格
@@ -513,7 +513,7 @@ module.exports = {
         "comma-style": [ "error" ], //强制使用一致的逗号风格
         "computed-property-spacing": [ "error", "always" ], //强制在计算属性中使用空格
         "eol-last": [ "error", "always" ], //要求文件末尾保留一行空行
-        "func-call-spacing": [ "error", "always" ], //要求在函数标识符和其调用之间有空格
+        // "func-call-spacing": [ "error", "always" ], //要求在函数标识符和其调用之间有空格
         "func-name-matching": [ "error", "always" ], //要求函数名与赋值给它们的变量名或属性名相匹配
         "func-names": [ "error", "as-needed" ], //在 ES6 环境中，这个函数名无法自动被赋值，要求函数表达式有一个名字
         "func-style": [
