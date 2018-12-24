@@ -1,1 +1,5 @@
+node_modules/
+tests/
 .eslintrc.js
+jsdoc-vue.js
+docs/

@@ -214,12 +214,12 @@ module.exports = {
         "no-sparse-arrays": [ "error" ], //禁止使用稀疏数组，也就是逗号之前没有任何元素的数组
         "no-template-curly-in-string": [ "error" ], //禁止在常规字符串中出现模板字面量占位符语法,不适用于ES3/5环境
         "no-unexpected-multiline": [ "error" ], //禁止使用令人困惑的多行表达式,需配合semi使用
-        semi: [
+        "semi": [
             "error",
             "always",
             {
                 //要求在语句末尾使用分号
-                omitLastInOneLineBlock: true //忽略花括号在同一行（内容也就在同一行了）的语句块中的最后一个分号
+                "omitLastInOneLineBlock": true //忽略花括号在同一行（内容也就在同一行了）的语句块中的最后一个分号
             }
         ],
         "no-unreachable": [ "error" ], //禁止在 return、throw、continue 和 break 语句后出现不可达代码
@@ -523,7 +523,33 @@ module.exports = {
                 //强制 function 声明或表达式的一致性
                 allowArrowFunctions: true
             }
-        ]
+        ],
+        "function-paren-newline": ["warn"], //如果函数的任一参数有换行，则要求在函数括号内换行。否则禁止换行。
+        "id-blacklist": ["warn", "data", "err", "e", "cb", "callback"], //该规则禁止在赋值语句和 function 定义中使用指定的标识符。(建议)
+        "id-match": ["error", "^([a-z]|[A-Z])+([A-Z][a-z]+)*$"], //强制使用骆驼拼写法命名
+        "jsx-quotes": ["error", "prefer-single"], //强制在 JSX 属性中一致地使用双引号或单引号
+        "keyword-spacing": ["error"], //强制关键字周围空格的一致性
+        "line-comment-position": ["warn"], //强制行注释的位置
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"], //当 tab 是为了对齐，允许混合使用空格和 tab
+        "no-multiple-empty-lines": ["error"], //不允许多个空行
+         "require-jsdoc": ["error", { //要求使用 JSDoc 注释
+             "require": {
+                 "FunctionDeclaration": true,
+                 "MethodDefinition": false,
+                 "ClassDeclaration": false,
+                 "ArrowFunctionExpression": false,
+                 "FunctionExpression": true
+             }
+        }],
+         "sort-vars": ["error", { //变量排序
+             "ignoreCase": true
+        }],
+        "no-var": ["error"], //要求使用 let 或 const 而不是 var
+         "sort-imports": ["warn", { //import 排序
+             "ignoreCase": false,
+             "ignoreMemberSort": false,
+             "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+         }],
         //------------------------------------------------------------------------------------
         //-------------JS Template-------------------------//
     },
