@@ -1,5 +1,8 @@
 node_modules/
 tests/
 .eslintrc.js
+.easy-mock.js
 jsdoc-vue.js
+vue.config.js
 docs/
+mock/

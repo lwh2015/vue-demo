@@ -40,6 +40,16 @@ export default {
             console.log(color);
         }
     },
+    /**
+     * Mounted
+     */
+    mounted() {
+        window.axios
+            .get("https://easy-mock.com/mock/5c2078d50fd1077df5e6e991/demo")
+            .then(res => {
+                console.log(res);
+            });
+    },
     methods: {
         /**@function abc
          * @param {string} a aaaccc

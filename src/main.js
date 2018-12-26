@@ -9,6 +9,7 @@ import ElementUI from "element-ui";
 import "../theme/index.css";
 //动画库
 import "animate.css";
+
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
 window.axios = Axios;

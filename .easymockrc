@@ -1,0 +1,11 @@
+{
+  "host":"http://xydev.cn:7300",
+  "output": "mock",
+  "template": "axios",
+  "projects": [
+    {
+      "id": "5c22ec236338b800170010c4",
+      "name": "警务通2.0巡逻勤务"
+    }
+  ]
+}
